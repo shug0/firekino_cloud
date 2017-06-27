@@ -35,6 +35,7 @@ exports.registerUser = functions.auth.user().onCreate(function(event) {
         uid: uid,
         name: newAnimal.name,
         emoji: newAnimal.value,
+        count: 0,
       }
     })
   })
